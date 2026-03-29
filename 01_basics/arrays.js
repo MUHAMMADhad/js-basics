@@ -48,3 +48,42 @@ not in the array then it gives -1 value which is false.*/
 // const myn2 = myArr.splice(1, 3)
 // console.log("C ", myArr);
 // console.log(myn2);
+
+/*1. Create an array of 5 numbers and:
+add one number at the end
+remove the first element
+print final array */
+
+// let numArr = [6, 7, 8, 9, 10];
+// let newArr = [...numArr.slice(1), 11];
+// numArr.push(11);
+// numArr.shift();
+// console.log(newArr);
+
+/* 2. Given:
+const arr = [10, 20, 30, 40]
+Check if 20 exists
+Find index of 30 */
+
+// const arr = [10, 20, 30, 40];
+// console.log(arr.includes(20));
+// console.log(arr.indexOf(30));
+
+// const myString = "Hadi";
+// console.log([...myString]);
+
+// const arr = Array.of(5, 10, 15);
+// console.log(arr);
+
+// const arr = [1, 2, 3, 4, 5];
+// arr.splice(startIndex, deleteCount)
+// arr.splice(2, 2);
+// console.log(arr);
+
+// const arr = [1, 2, 5, 6];
+// arr.splice(2, 0, 3, 4);
+// console.log(arr);
+
+// const arr = [10, 20, 30, 40];
+// arr.splice(1, 2, 25, 35);
+// console.log(arr);

@@ -27,3 +27,18 @@
 // let score3 = 300
 
 // console.log(Array.of(score1, score2, score3));
+
+// const a = ["a", "b"]
+// const b = ["c", "d"]
+// const c = [...a, ...b];
+// console.log(c);
+
+// const flat_arr = [1, 2, [3, 4], [5, [6, 7]]];
+// const final_arr = flat_arr.flat(3);
+// console.log(final_arr);
+
+// const arr = [5, 10, 15, 20, 25];
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// console.log(arr);
