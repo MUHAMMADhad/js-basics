@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing DOM</title>
+</head>
+
+<body>
+    <!-- 1. Basic DOM Properties Examples -->
+    <!-- Example 1: Accessing elements -->
+    <h1 id="title">Hello DOM!</h1>
+
+    <!-- Example 2: Changing content -->
+    <p id="demo">Old Text</p>
+
+    <!-- Example 3: Changing CSS using DOM -->
+    <p id="text">Change my color</p>
+
+    <!-- Example 4: Getting attribute values -->
+    <img id="image" src="assets/download.jpg">
+
+    <!-- Example 5: Form input value -->
+    <input type="text" id="name" value="Hadi">
+
+    <!-- 2. Practice Questions + Solutions -->
+    <!-- Question 1: Change text on button click -->
+    <p id="para">Hello</p>
+    <button onclick="changeText()">Click Me</button>
+
+    <!-- Question 2: Change background color -->
+    <div id="box">Box</div>
+    <button onclick="changeBgColor()">Change Background Color</button>
+
+    <!-- Question 3: Get input value and display it -->
+    <input type="text" id="userInput" value="">
+    <button onclick="showValue()">Show Value</button>
+    <p id="result">Result will appear here</p>
+
+    <!-- Question 4: Hide and show element -->
+    <p id="text">Hide me</p>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+
+    <!-- Question 5: Change image on click -->
+    <img id="pic" src="assets/download.jpg" width="200">
+    <button onclick="changeImage()">Change Image</button>
+
+    
+    <script src="02_dom/dom.js"></script>
+</body>
+
+</html>
