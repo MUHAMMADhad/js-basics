@@ -44,6 +44,23 @@ function showValue() {
     document.getElementById("result").innerText = val;
 }
 
+
+// Question 4: Hide and show element
+function hide() {
+    document.getElementById("text2").style.display = "none";
+}
+
+function show() {
+    document.getElementById("text2").style.display = "block";
+}
+
+// Question 5: Change image on click
+function changeImage() {
+    let img = document.getElementById("pic").src;
+    if (img.includes("download.jpg")) {
+        document.getElementById("pic").src = "assets/another.jpg";
+    }
+}
 /*3. Important DOM Properties List:
 You should practice these:
 innerHTML
@@ -60,3 +77,30 @@ id
 Task:
 User enters a color name
 Text color should change to that color.*/
+
+let colorInput = document.getElementById("colorInput");
+let colorText = document.getElementById("colorText");
+
+function changeTextColor() {
+    let color = colorInput.value;
+    colorText.style.color = color;
+}
+
+/*Try building this:
+Input field
+Button
+When clicked → show input text inside a <div>
+Change color of the text
+ */
+
+let textInput = document.getElementById("textInput");
+let showTextDiv = document.getElementById("showText");
+
+function showText() {
+    let text3 = textInput.value;
+    showTextDiv.innerText = text3;
+}
+
+function changeColor() {
+    showTextDiv.style.color = "red";
+}
