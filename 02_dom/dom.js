@@ -112,6 +112,7 @@ Each time you click → text gets added to a list (not replaced)
 Input clears after adding
 */
 
+// TODO app with ADD, DELETE. (Basic)
 let textInput = document.getElementById("textInput");
 let list = document.getElementById("list");
 
