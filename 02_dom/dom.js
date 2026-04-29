@@ -10,9 +10,9 @@ console.log(para);
 // Property used: innerHTML
 
 // Example 3: Changing CSS using DOM
-let el = document.getElementById("text");
-el.style.color = "red";
-el.style.fontSize = "20px";
+// let el = document.getElementById("text");
+// el.style.color = "red";
+// el.style.fontSize = "20px";
 // Property used: style
 
 // Example 4: Getting attribute values
@@ -93,14 +93,43 @@ When clicked → show input text inside a <div>
 Change color of the text
  */
 
+// let textInput = document.getElementById("textInput");
+// let showTextDiv = document.getElementById("showText");
+
+// function showText() {
+//     let text3 = textInput.value;
+//     showTextDiv.innerText = text3;
+// }
+
+// function changeColor() {
+//     showTextDiv.style.color = "red";
+// }
+
+/* Practice Task:
+Input field
+Button "Add"
+Each time you click → text gets added to a list (not replaced)
+Input clears after adding
+*/
+
 let textInput = document.getElementById("textInput");
-let showTextDiv = document.getElementById("showText");
+let list = document.getElementById("list");
 
-function showText() {
-    let text3 = textInput.value;
-    showTextDiv.innerText = text3;
-}
-
-function changeColor() {
-    showTextDiv.style.color = "red";
+function addItem() {
+    let li = document.createElement("li"); // <ul> -> <li>
+    let text = document.createElement("span");  // <ul> -> <li> <span> </span> </li>
+    text.innerText = textInput.value; // <ul> -> <li> <span> Text </span> </li>
+    text.onclick = function () {
+        li.style.textDecoration = "line-through";
+    }
+    let deleteBtn = document.createElement("button"); // <ul> -> <li> <span> Text </span> <button> </button> </li>
+    deleteBtn.innerText = "Delete"; // // <ul> -> <li> <span> Text </span> <button> Delete </button> </li>
+    deleteBtn.style.marginLeft = "10px";
+    deleteBtn.onclick = function () {
+        li.remove();
+    }
+    li.appendChild(text);
+    li.appendChild(deleteBtn);
+    list.appendChild(li);   
+    textInput.value = "";
 }
